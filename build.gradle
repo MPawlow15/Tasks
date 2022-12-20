@@ -17,8 +17,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.4.1'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+jar {
+	enabled = false
 }
 
 tasks.named('test') {
