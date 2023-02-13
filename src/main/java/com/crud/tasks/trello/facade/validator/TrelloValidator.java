@@ -1,4 +1,4 @@
-package com.crud.tasks.trello.validator;
+package com.crud.tasks.trello.facade.validator;
 
 import com.crud.tasks.domain.TrelloBoard;
 import com.crud.tasks.domain.TrelloCard;

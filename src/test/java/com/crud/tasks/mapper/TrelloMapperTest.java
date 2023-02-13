@@ -93,4 +93,17 @@ public class TrelloMapperTest {
         assertEquals("1", trelloCardDto.getListId());
     }
 
+    @Test
+    void testmapToCard() {
+        //Given
+        TrelloCardDto trelloCardDto = new TrelloCardDto("name", "des", "pos", "12");
+        //When
+        TrelloCard trelloCard = trelloMapper.mapToCard(trelloCardDto);
+        //Then
+        assertEquals("12", trelloCard.getListId());
+        assertEquals("pos", trelloCard.getPos());
+        assertEquals("name", trelloCard.getName());
+        assertEquals("des", trelloCard.getDescription());
+    }
+
 }
