@@ -53,7 +53,7 @@ public class TaskControllerTest {
     @Test
     public void shouldFetchTask() throws Exception {
         //Given
-        List<Task> taskList = List.of(new Task(12L, "test", "content"));
+        List<Task> taskList = List.of(new Task(12L, "test1", "content"));
         List<TaskDto> taskDtoList = List.of(new TaskDto(12L, "test", "content"));
         when(taskMapper.mapToTaskDtoList(anyList())).thenReturn(taskDtoList);
         when(dbService.getAllTasks()).thenReturn(taskList);
