@@ -3,7 +3,7 @@ package com.crud.tasks.scheduler;
 
 import com.crud.tasks.config.AdminConfig;
 import com.crud.tasks.repository.TaskRepository;
-import com.crud.tasks.service.SimpleEmailService;
+import com.crud.tasks.service.MimeMessage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -19,7 +19,7 @@ public class EmailSchedulerTest {
     private EmailScheduler emailScheduler;
 
     @Mock
-    private SimpleEmailService simpleEmailService;
+    private MimeMessage simpleEmailService;
 
     @Mock
     private TaskRepository taskRepository;

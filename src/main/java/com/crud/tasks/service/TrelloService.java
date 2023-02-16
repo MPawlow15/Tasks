@@ -19,7 +19,7 @@ public class TrelloService {
 
     public static final String SUBJECT = "Tasks: New Trello card";
     private final TrelloClient trelloClient;
-    private final SimpleEmailService emailService;
+    private final MimeMessage emailService;
     private final AdminConfig adminConfig;
 
     public List<TrelloBoardDto> fetchTrelloBoards() {
